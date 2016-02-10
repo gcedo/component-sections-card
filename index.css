@@ -1,0 +1,150 @@
+@import '@economist/component-grid';
+@import '@economist/component-typography';
+@import '@economist/component-palette';
+@import '@economist/component-icon';
+@import '@economist/component-link-button';
+
+:root {
+  --icon-canvas-size: 60px;
+  --icon-size: 30px;
+}
+
+.sections-card * {
+  box-sizing: border-box;
+}
+
+.sections-card {
+  font-size: 1rem;
+  font-family: var(--fontfamily-sans);
+  font-weight: normal;
+  padding: 0;
+  color: var(--color-london);
+}
+
+.sections-card__wrapper {
+  line-height: var(--text-line-height-sans-on-step--1);
+  margin: 0 auto;
+}
+
+.sections-card .link-button {
+  text-decoration: none;
+  color: var(--sections-card-link-color, var(--color-kiev));
+  font-size: var(--text-size-step--2);
+  display: block;
+  padding-left: 0.5em;
+}
+
+.sections-card__list .link-button:hover {
+  color: var(--color-chicago);
+}
+
+.sections-card__list {
+  padding: 0 3em;
+  box-sizing: border-box;
+}
+
+.sections-card__list .list {
+  margin: 0;
+  padding: 0;
+}
+
+.sections-card__link {
+  color: var(--color-london);
+}
+
+.sections-card .list__item {
+  display: block;
+  vertical-align: top;
+  white-space: nowrap;
+  line-height: 1.7em;
+  width: 100%;
+}
+
+.sections-card .list__item:last-child {
+  margin-bottom: 0;
+}
+
+.sections-card__menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
+}
+
+.sections-card__list-sections {
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+  max-width: 50%;
+}
+
+.sections-card__list-sections .list {
+  column-count: 2;
+}
+
+.sections-card__list-media {
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+  max-width: 20%;
+  text-align: center;
+}
+
+.sections-card__list-media .list {
+  display: inline-block;
+}
+
+.sections-card__list-media .list__item {
+  clear: both;
+  text-align: left;
+  display: inline;
+}
+
+.sections-card__list-media .link-button.link-button--icon-background {
+  background-size: 1.8em;
+  background-position: 5px center;
+  padding-left: 2.5em;
+}
+
+.sections-card__list-blogs {
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+  max-width: 20%;
+}
+
+.sections-card__list-media,
+.sections-card__list-blogs {
+  border-left: solid 1px var(--sections-card-border-left-color, var(--color-london));
+}
+
+.sections-card__list-media svg,
+.sections-card__list-media use {
+  fill: var(--sections-card__list-media-icon-fill, var(--color-chicago));
+}
+
+.sections-card__list-media .Icon {
+  margin-right: 0.5em;
+}
+
+.sections-card__header {
+  margin-top: 0;
+  color: var(--sections-card__header-color, var(--color-kiev));
+  text-transform: uppercase;
+  font-size: var(--text-size-step--2);
+  font-weight: bold;
+  padding-left: 0.5em;
+}
+
+.sections-card__link.link-button--icon svg {
+  vertical-align: middle;
+  width: 24px;
+}
+
+@media (width<=1000px){
+  .sections-card .sections-card__list {
+    padding: 0 2em;
+  }
+}
