@@ -1,8 +1,0 @@
-@import "./index.css";
-@import "@economist/component-icon/backgrounds/headset.css";
-@import "@economist/component-icon/backgrounds/video.css";
-@import "@economist/component-icon/backgrounds/film.css";
-
-body {
-  background: var(--color-berlin);
-}
